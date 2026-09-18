@@ -6,6 +6,10 @@
     <title>Treact</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section id="main-nav">
@@ -40,11 +44,230 @@
             </li>
             <div class="nav__right">
               <a href="#login" class="login__link">Login</a>
-              <button class="sign-up-button">Sign Up</button>
+              <button class="sign__up__button">Sign Up</button>
+              <button class="menu__button--open" onclick="openMenu()">
+                <span class="menu__bar"></span>
+                <span class="menu__bar"></span>
+                <span class="menu__bar"></span>
+              </button>
+              <div class="menu__backdrop">
+                <button class="button__menu--close" onclick="closeMenu()">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <ul class="nav__link--list">
+                  <li class="nav__link">
+                    <a
+                      href="#about"
+                      class="nav__link--anchor link__hover--effect"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav__link">
+                    <a
+                      href="#blog"
+                      class="nav__link--anchor link__hover--effect"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="nav__link">
+                    <a
+                      href="#Pricing"
+                      class="nav__link--anchor link__hover--effect"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li class="nav__link">
+                    <a
+                      href="#Contact Us"
+                      class="nav__link--anchor link__hover-effect"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </ul>
         </div>
       </nav>
     </section>
+
+    <section id="about" class="about__section">
+      <div class="container">
+        <div class="row">
+          <div class="about__info">
+            <h2 class="section__title">
+              Beautiful React Templates <span class="highlight">for you.</span>
+            </h2>
+            <p class="section__description">
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages and components.
+            </p>
+            <div class="email__input--wrapper">
+              <input
+                type="email"
+                placeholder="Your Email Addresss"
+                class="email__input"
+              />
+              <button class="button__get--started">Get Started</button>
+              <div class="trusted__customers">
+                <p class="trusted__title">Our Trusted Customers</p>
+                <img
+                  src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                  alt="Logos of our trusted customers"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="about__img--wrapper">
+            <img
+              src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+              alt="Feature Illistration"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features__section">
+      <div class="container">
+        <div class="row">
+          <div class="section__header">
+            <span class="section__tag">Features</span>
+            <h2 class="section__title">
+              We have Amazing<span class="highlight">Service.</span>
+            </h2>
+            <p class="section__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="feature__grid">
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img
+                  src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                  alt="Shield icon"
+                />
+                <h2 class="feature__header">Secure</h2>
+                <p class="feature_description">
+                  We strictly only deal with vendors that provide top notch
+                  security.
+                </p>
+              </div>
+            </div>
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img
+                  src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                  alt="Shield icon"
+                />
+                <h2 class="feature__header">24/7 Support</h2>
+                <p class="feature_description">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img
+                  src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                  alt="Customize icon"
+                />
+                <h2 class="feature__header">Customizable</h2>
+                <p class="feature_description">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img
+                  src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                  alt="Reliable icon"
+                />
+                <h2 class="feature__header">Reliable</h2>
+                <p class="feature_description">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img
+                  src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+                  alt="Fast icon"
+                />
+                <h2 class="feature__header">Fast</h2>
+                <p class="feature_description">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+            <div class="feature__card">
+              <div class="feature__icon">
+                <img
+                  src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+                  alt="Shield icon"
+                />
+                <h2 class="feature__header">Easy</h2>
+                <p class="feature_description">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="quality" class="quality__section">
+      <div class="container">
+        <div class="row">
+          <div class="quality__work--info">
+            <div class="section__header">
+              <span class="section__tag">Quality Work</span>
+              <h2 class="section__title">
+                Designed & Developed by
+                <span class="highlight">Professionals</span>
+              </h2>
+              <p class="section__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quid nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button class="learn__more__button">Learn More</button>
+            </div>
+          </div>
+          <div class="quality__work_img--wrapper">
+            <img
+              src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
+              alt="About page screenshot"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="easy__steps" class="steps__section">
+      <div class="containter">
+        <div class="row">
+          <div class="laptop__website_img--wrapper">
+            <img src="assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="Laptop website screenshot">
+
+          </div>
+          <div class="section__header">
+            <span class="section__tag">STEPS</span>
+            <h2 class="section__title">Easy to <span class="highlight">Get Started</span></h2>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
